@@ -18,4 +18,16 @@ def calc(a:str):
 
     return z
 
+def task_6():
+    print(*(calc(input())[1:]))
+
 if __name__ == '__main__':
+    f = open("input.txt", "r")
+    f1 = open("output.txt", "w")
+    sys.stdin = f
+    sys.stdout = f1
+    t_s = time.time_ns()
+    task_6()
+    t_e = time.time_ns()
+    print(f"total time: {(t_e - t_s) / (10 ** 9)} seconds")
+    f.close()
