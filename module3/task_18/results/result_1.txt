@@ -1,0 +1,2 @@
+3.0000000
+total time: 0.0 seconds
